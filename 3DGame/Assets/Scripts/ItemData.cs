@@ -2,8 +2,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Item Data")]
 public class ItemData : ScriptableObject
 {
-    public string id;
-    public string displayName;
-    public Sprite icon;
-    public GameObject prefab;
+    //The start of an inventory system
+    
+    
 }
