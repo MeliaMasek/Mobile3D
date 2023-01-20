@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Slime : EnemyBase
+public class Slime : CharacterBase
 {
     public override void Attack()
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Goblin : CharacterBase
+public class Player : CharacterBase
 {
     public override void Attack()
     {

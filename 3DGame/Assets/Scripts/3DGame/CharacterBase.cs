@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class EnemyBase : MonoBehaviour
+public abstract class CharacterBase : MonoBehaviour
 {
     public abstract void Attack();
     
