@@ -34,14 +34,13 @@ public class InventorySlot
 
     public bool RoomLeftInStack(int amountToAdd, out int amountRemaining)
     {
-        amountRemaining = itemData.maxStackSize - stacksize;
+        amountRemaining = ItemData.maxStackSize - stacksize;
         return RoomLeftInStack(amountToAdd);
     }
 
     public bool RoomLeftInStack(int amountToAdd)
     {
-        if (stacksize + amountToAdd <= itemData.maxStackSize)
-             return true;
+        if (stacksize + amountToAdd <= itemData.maxStackSize) return true;
         else return false;
     }
     

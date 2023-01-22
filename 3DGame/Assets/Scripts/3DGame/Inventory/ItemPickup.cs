@@ -1,10 +1,9 @@
-using System;
 using UnityEngine;
 
 [RequireComponent(typeof(SphereCollider))]
 public class ItemPickup : MonoBehaviour
 {
-    public float pickupRadius;
+    public float pickupRadius = 1f;
     public InventoryData ItemData;
 
     private SphereCollider itemCollider;
