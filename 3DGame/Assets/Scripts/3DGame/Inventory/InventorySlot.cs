@@ -1,10 +1,12 @@
 using UnityEngine;
-public class InventorySlot : MonoBehaviour
-{
-    public InventoryData itemData;
-    public InventoryData ItemData => itemData;
 
-    public int stacksize;
+[System.Serializable]
+public class InventorySlot
+{
+    [SerializeField] private InventoryData itemData;
+    [SerializeField] private int stacksize;
+    
+    public InventoryData ItemData => itemData;
     public int StackSize => stacksize;
 
     public InventorySlot(InventoryData source, int amount)
@@ -26,14 +28,14 @@ public class InventorySlot : MonoBehaviour
 
     public bool RoomLeftInStack(int amountToAdd, out int amountRemaining)
     {
-        amountRemaining = ItemData.maxStackSize - stacksize;
+        amountRemaining = itemData.maxStackSize - stacksize;
         return RoomLeftInStack(amountToAdd);
     }
 
     public bool RoomLeftInStack(int amountToAdd)
     {
         if (stacksize + amountToAdd <= itemData.maxStackSize)
-            return true;
+             return true;
         else return false;
     }
     
