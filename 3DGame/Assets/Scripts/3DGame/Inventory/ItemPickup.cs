@@ -7,13 +7,13 @@ public class ItemPickup : MonoBehaviour
     public float pickupRadius;
     public InventoryData ItemData;
 
-    private SphereCollider collider;
+    private SphereCollider itemCollider;
 
     private void Awake()
     {
-        collider = GetComponent<SphereCollider>();
-        collider.isTrigger = true;
-        collider.radius = pickupRadius;
+        itemCollider = GetComponent<SphereCollider>();
+        itemCollider.isTrigger = true;
+        itemCollider.radius = pickupRadius;
     }
 
     private void OnTriggerEnter(Collider other)

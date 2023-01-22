@@ -1932,7 +1932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 506156686ed5ea0418734c56505917e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySize: 10
+  inventorySize: 5
   inventorySystem:
     inventorySlots: []
 --- !u!1 &1510160135
@@ -2419,6 +2419,8 @@ GameObject:
   - component: {fileID: 1828548247}
   - component: {fileID: 1828548246}
   - component: {fileID: 1828548245}
+  - component: {fileID: 1828548251}
+  - component: {fileID: 1828548252}
   m_Layer: 0
   m_Name: Jewel
   m_TagString: Untagged
@@ -2560,6 +2562,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828548243}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!135 &1828548251
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828548243}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000020861626}
+--- !u!114 &1828548252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828548243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98862f131b208849b58696be2c690f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupRadius: 1
+  ItemData: {fileID: 11400000, guid: b7b65fbedd01a0d4cb01cf43cebb44a9, type: 2}
 --- !u!1 &1848796508
 GameObject:
   m_ObjectHideFlags: 0

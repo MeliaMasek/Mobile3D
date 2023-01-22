@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -22,7 +23,37 @@ public class InventorySystem
 
     public bool AddToInventory(InventoryData itemToAdd, int amountToAdd)
     {
-        inventorySlots[0] = new InventorySlot(itemToAdd, amountToAdd);
-        return true;
+        if (ContainsItem(itemToAdd, out List<InventorySlot> invSlot)) //check item exists in inventory
+        {
+            foreach (var slot in invSlot)
+            {
+                if (slot.RoomLeftInStack(amountToAdd))
+                {
+                    slot.AddToStack(amountToAdd);
+                    OnInventorySlotChanged?.Invoke(slot);
+                    return true;
+                }
+            }
+        }
+        
+        if (HasFreeSlot(out InventorySlot freeSlot)) //gets first available slot
+        {
+            freeSlot.UpdateInventorySlot(itemToAdd, amountToAdd);
+            OnInventorySlotChanged?.Invoke(freeSlot);
+            return true;
+        }
+        return false;
+    }
+
+    public bool ContainsItem(InventoryData itemToAdd, out List<InventorySlot> invSlot)
+    {
+        invSlot = InventorySlots.Where(i => i.ItemData == itemToAdd).ToList();
+        return invSlot.Count > 1 ? true : false;
+    }
+
+    public bool HasFreeSlot(out InventorySlot freeSlot)
+    {
+        freeSlot = inventorySlots.FirstOrDefault(i => i.ItemData == null);
+        return freeSlot == null ? false : true;
     }
 }
