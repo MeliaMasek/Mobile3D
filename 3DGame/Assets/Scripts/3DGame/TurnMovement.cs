@@ -1,40 +1,93 @@
 using UnityEngine;
 
+//code borrowed and modified from xOctoManx from Youtube https://www.youtube.com/watch?v=9n1NrP8bpyA
 public class TurnMovement : MonoBehaviour
 {
-    public float moveSpeed = .25f;
-    public float snapDistance = .25f;
-    
-    public Vector3 targetPosition;
-    public bool moving;
+    private Vector3
+        up = Vector3.zero,
+        right = new Vector3(0, 90, 0),
+        down = new Vector3(0, 180, 0),
+        left = new Vector3(0, 270, 0),
+        currentDirection = Vector3.zero;
 
-    void Update()
+    private Vector3 nextPos, destination, direction;
+
+    public float speed;
+    public float rayLength = 1f;
+    private bool canMove;
+
+    private void Start()
     {
-        if (Input.GetButtonDown("Attack"))
+        currentDirection = up;
+        nextPos = Vector3.forward;
+        destination = transform.position;
+    }
+
+    private void Update()
+    {
+        Move();
+    }
+
+    private void Move()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, destination, speed * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            transform.position += Vector3.forward;
-            moving = true;
+            nextPos = Vector3.forward;
+            currentDirection = up;
+            canMove = true;
         }
 
-        if (Vector3.Distance(transform.position, targetPosition) > snapDistance && moving)
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            transform.position += Vector3.forward * (moveSpeed * Time.deltaTime);
-        }
-        else
-        {
-            transform.position = targetPosition;
-            moving = false;
+            nextPos = Vector3.back;
+            currentDirection = down;
+            canMove = true;
         }
 
-        if (Input.GetAxisRaw("Vertical") == 1f)
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            targetPosition = transform.position + Vector3.forward;
-            moving = true;
+            nextPos = Vector3.right;
+            currentDirection = right;
+            canMove = true;
         }
-        else if (Input.GetAxisRaw("Vertical") == -1f)
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            targetPosition = transform.position + Vector3.back;
-            moving = true;
+            nextPos = Vector3.left;
+            currentDirection = left;
+            canMove = true;
+        }
+
+        if (Vector3.Distance(destination, transform.position) <= .00001f)
+        {
+            transform.localEulerAngles = currentDirection;
+            if (canMove)
+            {
+                if (ValidMovement())
+                {
+                    destination = transform.position + nextPos;
+                    direction = nextPos;
+                    canMove = false;
+                }
+            }
         }
     }
+
+    bool ValidMovement()
+    {
+        Ray tempRay = new Ray(transform.position + new Vector3(0, .25f, 0), transform.forward);
+        RaycastHit rayHit;
+        Debug.DrawRay(tempRay.origin, tempRay.direction, Color.blue);
+
+        if (Physics.Raycast(tempRay, out rayHit, rayLength))
+        {
+            if (rayHit.collider.attachedRigidbody)
+            {
+                return false;
+            }            
+        }
+        return true;
+    }   
 }
