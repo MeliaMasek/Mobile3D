@@ -25,19 +25,42 @@ public class TurnMovement : MonoBehaviour
 
     private void Update()
     {
-        Move();
+        MoveUp();
+        MoveDown();
+        MoveLeft();
+        MoveRight();
     }
 
-    private void Move()
+    private void MoveUp()
     {
         transform.position = Vector3.MoveTowards(transform.position, destination, speed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
+
         {
             nextPos = Vector3.forward;
             currentDirection = up;
             canMove = true;
         }
+
+        if (Vector3.Distance(destination, transform.position) <= .00001f)
+        {
+            transform.localEulerAngles = currentDirection;
+            if (canMove)
+            {
+                if (ValidMovement())
+                {
+                    destination = transform.position + nextPos;
+                    direction = nextPos;
+                    canMove = false;
+                }
+            }
+        }
+    }
+
+    private void MoveDown()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, destination, speed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -46,12 +69,50 @@ public class TurnMovement : MonoBehaviour
             canMove = true;
         }
 
+        if (Vector3.Distance(destination, transform.position) <= .00001f)
+        {
+            transform.localEulerAngles = currentDirection;
+            if (canMove)
+            {
+                if (ValidMovement())
+                {
+                    destination = transform.position + nextPos;
+                    direction = nextPos;
+                    canMove = false;
+                }
+            }
+        }
+    }
+
+    private void MoveRight()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, destination, speed * Time.deltaTime);
+
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             nextPos = Vector3.right;
             currentDirection = right;
             canMove = true;
         }
+
+        if (Vector3.Distance(destination, transform.position) <= .00001f)
+        {
+            transform.localEulerAngles = currentDirection;
+            if (canMove)
+            {
+                if (ValidMovement())
+                {
+                    destination = transform.position + nextPos;
+                    direction = nextPos;
+                    canMove = false;
+                }
+            }
+        }
+    }
+
+    private void MoveLeft()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, destination, speed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
@@ -89,5 +150,25 @@ public class TurnMovement : MonoBehaviour
             }            
         }
         return true;
-    }   
+    }
+
+    public void UpButton()
+    {
+      MoveUp();
+    }
+
+    public void DownButton()
+    {
+        MoveDown();
+    }
+
+    public void LeftButton()
+    {
+        MoveLeft();
+    }
+
+    public void RightButton()
+    {
+        MoveRight();
+    }
 }
