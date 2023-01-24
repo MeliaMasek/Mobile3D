@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2797395126342875033}
   - component: {fileID: 3799855475974928451}
   - component: {fileID: 8640404519660743930}
+  - component: {fileID: 4025527341666435134}
   - component: {fileID: 6069884707607472607}
-  - component: {fileID: 5822580390726842843}
   - component: {fileID: 2999026107439866023}
   - component: {fileID: 5895729469293207095}
   m_Layer: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5130777932096270344}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.75, y: 0, z: 0.75}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
@@ -87,20 +87,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6069884707607472607
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5130777932096270344}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &5822580390726842843
+--- !u!54 &4025527341666435134
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,6 +103,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &6069884707607472607
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5130777932096270344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.102225, y: 1, z: 1.1746804}
+  m_Center: {x: 0.0059734643, y: 0, z: 0.020617703}
 --- !u!114 &2999026107439866023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,10 +131,10 @@ MonoBehaviour:
   triggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: d0ba1a7f935e65a418000586110e6787, type: 2}
-        m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
+      - m_Target: {fileID: 11400000, guid: 4567b9ab637459441996f3a657bf2f02, type: 2}
+        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
         m_MethodName: UpdateValue
-        m_Mode: 4
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -144,12 +144,12 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ImageBehavior, Assembly-CSharp
-        m_MethodName: UpdateImage
+        m_TargetAssemblyTypeName: TextLabelBehavior, Assembly-CSharp
+        m_MethodName: UpdateLabel
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: d0ba1a7f935e65a418000586110e6787, type: 2}
-          m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 4567b9ab637459441996f3a657bf2f02, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -168,6 +168,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: d4eb0fb90c8bac649ac3ff98811322ef, type: 2}
+        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+        m_MethodName: RaiseAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 2cd7d6f5437876c4cbd31e46e09598f7, type: 2}
         m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
         m_MethodName: RaiseAction
         m_Mode: 1
