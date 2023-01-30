@@ -1,9 +1,7 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(CharacterController))]
-//test for interfaces, not using
 public class CharBase : MonoBehaviour, IMove, ITrigger
 {
     public float moveSpeed = 1f;

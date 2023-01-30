@@ -1,13 +1,9 @@
-using System;
 using UnityEngine;
-
-//test for interfaces, not using
 public class UserInput : MonoBehaviour
 {
     public CharBase characterObj;
     private IMove moveObj;
-
-
+    private ITrigger triggerObj;
     private void Awake()
     {
         moveObj = characterObj as IMove;
@@ -21,7 +17,7 @@ public class UserInput : MonoBehaviour
         }
     }
 
-    public void ChangeToVehicle(VehicleBase vehicleObj)
+    public void ChangeWeapon(WeaponBase vehicleObj)
     {
         moveObj = vehicleObj;
     }

@@ -1,12 +1,9 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(BoxCollider))]
 [RequireComponent(typeof(Rigidbody))]
-
-//Test class for Interfaces, not using
-public class VehicleBase : MonoBehaviour, IMove, ITrigger
+public class WeaponBase : MonoBehaviour, IMove, ITrigger
 {
     public UnityEvent triggerEnterEvent;
     private Rigidbody rigidbodyObj;

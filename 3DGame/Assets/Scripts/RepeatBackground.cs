@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class RepeatBackground : MonoBehaviour
 {
-    public BoxCollider bCollider;
-    public Rigidbody rb;
+    private BoxCollider bCollider;
+    private Rigidbody rb;
     private float width;
     private float scrollSpeed = -1f;
 
