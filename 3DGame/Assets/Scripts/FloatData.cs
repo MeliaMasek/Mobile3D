@@ -1,5 +1,5 @@
-using System.Globalization;
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu]
 
@@ -7,7 +7,9 @@ using UnityEngine;
 public class FloatData : ScriptableObject
 {
     public float value;
-
+    public UnityEvent onMinEvent;
+    public UnityEvent onMaxEvent;
+    public UnityEvent onUpdateEvent;
     public void SetValue(float num)
     {
         value = num;
@@ -16,5 +18,24 @@ public class FloatData : ScriptableObject
 
     {
         value += num;
+        onUpdateEvent.Invoke();
+    }
+
+    public void CheckMin(float num)
+    {
+        if (value <= num)
+        {
+            value = num;
+            onMinEvent.Invoke();
+        }
+    }
+
+    public void CheckMax(float num)
+    {
+        if (value >= num)
+        {
+            value = num;
+            onMaxEvent.Invoke();
+        }
     }
 }

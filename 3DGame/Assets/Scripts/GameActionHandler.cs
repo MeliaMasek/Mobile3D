@@ -12,6 +12,6 @@ public class GameActionHandler : MonoBehaviour
 
     private void Raise()
     {
-        onRaiseEvent.Invoke();
+        onRaiseEvent?.Invoke();
     }
 }
