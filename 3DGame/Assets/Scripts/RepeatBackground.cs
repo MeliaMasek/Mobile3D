@@ -12,7 +12,7 @@ public class RepeatBackground : MonoBehaviour
     public int floorAmount = 2;
     public float safeZone = 10f;
 
-    private float spawnZ = -5f;
+    private float spawnZ = -5.5f;
     private int lastPrefabIndex = 0;
    
     public void Update()

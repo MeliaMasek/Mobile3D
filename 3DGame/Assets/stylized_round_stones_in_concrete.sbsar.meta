@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 607f9e0190c2d904c97b91326c3b8378
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: de2867e0b637992419f01993d5c95161, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/stylized_round_stones_in_concrete.sbsar

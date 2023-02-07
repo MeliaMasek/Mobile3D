@@ -1,13 +1,18 @@
-using System;
 using UnityEngine;
-
+// code borrowed and modified from N3K EN on youtube https://www.youtube.com/watch?v=8JHrM7yS0Xw&list=PLLH3mUGkfFCXps_IYvtPcE9vcvqmGMpRK&index=4
 public class CameraBehavior : MonoBehaviour
 {
-    public GameObject player;
-    private Vector3 offset = new Vector3(0, 5, -7);
+    private Transform lookAt;
+    private Vector3 offset;
 
-    private void LateUpdate()
+    private void Start()
     {
-        transform.position = player.transform.position + offset;
+        lookAt = GameObject.FindGameObjectWithTag("Player").transform;
+        offset = transform.position - lookAt.position;
+    }
+
+    private void Update()
+    {
+        transform.position = lookAt.position + offset;
     }
 }
