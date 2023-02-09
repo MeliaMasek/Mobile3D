@@ -77,16 +77,17 @@ public class TurnMovement : MonoBehaviour
 
     bool ValidMovement()
     {
-        Ray myRay = new Ray(transform.position + new Vector3(0.1f, 0.25f, 0), transform.forward);
+        Ray myRay = new Ray(transform.position + new Vector3(0.2f, 0.27f, 0), transform.forward);
         RaycastHit hit;
 
-        Debug.DrawRay(myRay.origin, myRay.direction, Color.red);
-        Debug.DrawRay(transform.position, myRay.direction - transform.position);
+        Debug.DrawRay(myRay.origin, myRay.direction, Color.blue);
+        Debug.DrawRay(transform.position, (myRay.direction - transform.position));
 
         if (Physics.Raycast(myRay,out hit, rayLength))
         {
-            if (hit.collider.tag == "Obstacle")
+            if (hit.rigidbody.CompareTag("Obstacle"))
             {
+                //Debug.Log("Hit");
                 return false;
             }
         }
