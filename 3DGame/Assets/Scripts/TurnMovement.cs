@@ -77,6 +77,7 @@ public class TurnMovement : MonoBehaviour
 
     bool ValidMovement()
     {
+        
         Ray myRay = new Ray(transform.position + new Vector3(0.2f, 0.27f, 0), transform.forward);
         RaycastHit hit;
 
