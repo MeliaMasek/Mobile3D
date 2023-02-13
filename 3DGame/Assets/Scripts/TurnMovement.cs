@@ -15,7 +15,6 @@ public class TurnMovement : MonoBehaviour
     public float speed;
     public float rayLength = 1f;
     private bool canMove;
-
     private void Start()
     {
         currentDirection = up;
@@ -75,10 +74,11 @@ public class TurnMovement : MonoBehaviour
         }
     }
 
-    bool ValidMovement()
+    
+     bool ValidMovement()
     {
-        
         Ray myRay = new Ray(transform.position + new Vector3(0.2f, 0.27f, 0), transform.forward);
+        
         RaycastHit hit;
 
         Debug.DrawRay(myRay.origin, myRay.direction, Color.blue);

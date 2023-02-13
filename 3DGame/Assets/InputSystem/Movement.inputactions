@@ -1,64 +1,75 @@
 {
-    "name": "New Controls",
+    "name": "Movement",
     "maps": [
         {
-            "name": "PlayerInput",
+            "name": "CharacterControls",
             "id": "b8c29424-931a-4e0a-9474-8bc4fdecb835",
             "actions": [
                 {
                     "name": "Movement",
                     "type": "Value",
                     "id": "2d497258-7326-44b8-9d14-47c88659c687",
-                    "expectedControlType": "Analog",
-                    "processors": "",
+                    "expectedControlType": "Vector2",
+                    "processors": "NormalizeVector2",
                     "interactions": "",
                     "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "0dcdbb1a-7a70-44a0-bfb3-3d496d28dd11",
-                    "path": "<Touchscreen>/primaryTouch/delta/down",
+                    "name": "2D Vector",
+                    "id": "c72d5c70-bb45-483e-ae1d-1b09f7d0c7e9",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
-                    "groups": "D-pad",
+                    "groups": "",
                     "action": "Movement",
-                    "isComposite": false,
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "cc99392e-61cd-464f-9c44-0127030e1b93",
-                    "path": "<Touchscreen>/primaryTouch/delta/left",
+                    "name": "up",
+                    "id": "7be1879a-ee38-4118-83a8-e51b9995cbd4",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "D-pad",
+                    "groups": "",
                     "action": "Movement",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "1d745977-fb5f-4a3b-91cd-d13c94c5ec35",
-                    "path": "<Touchscreen>/primaryTouch/delta/right",
+                    "name": "down",
+                    "id": "a1c203b5-62bc-4648-979f-5859ed91a5f5",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "D-pad",
+                    "groups": "",
                     "action": "Movement",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "88735c97-4fa9-4f25-9968-6abe1c0cff68",
-                    "path": "<Touchscreen>/primaryTouch/delta/up",
+                    "name": "left",
+                    "id": "65571c0e-9c87-4560-a163-fcddba24ee72",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "D-pad",
+                    "groups": "",
                     "action": "Movement",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "d7c87d0b-ee96-46b0-a0c3-1ea82a9936f5",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
