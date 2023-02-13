@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e82d515da6960c8448148f8bb6187abb, type: 3}
-  m_Name: Currency
+  m_Script: {fileID: 11500000, guid: 162295104266fe74799f06467fb56058, type: 3}
+  m_Name: Coins
   m_EditorClassIdentifier: 
-  value: 6
+  prefab: {fileID: 0}

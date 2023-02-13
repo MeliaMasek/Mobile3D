@@ -41,7 +41,7 @@ public class CharController : MonoBehaviour
         }
         else
         {
-            characterController.Move(currentMovement * Time.deltaTime);
+            characterController.Move(currentMovement * (Time.deltaTime * 2f));
         }
     }
 

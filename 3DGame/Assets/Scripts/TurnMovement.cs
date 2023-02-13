@@ -38,12 +38,12 @@ public class TurnMovement : MonoBehaviour
             canMove = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            nextPos = Vector3.back;
-            currentDirection = down;
-            canMove = true;
-        }
+        //if (Input.GetKeyDown(KeyCode.DownArrow))
+        //{
+        //    nextPos = Vector3.back;
+        //    currentDirection = down;
+        //    canMove = true;
+        //}
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
