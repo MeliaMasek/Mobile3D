@@ -39,6 +39,17 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "down",
+                    "id": "1e3f6974-2a94-4e09-9c75-ee7ce706b04d",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "left",
                     "id": "65571c0e-9c87-4560-a163-fcddba24ee72",
                     "path": "<Keyboard>/leftArrow",
@@ -59,28 +70,6 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "f1a53d9b-3919-428d-9686-84a07822e7f2",
-                    "path": "<Touchscreen>/delta",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "2425ba7e-1180-45a1-9e7b-c9020b4b8ae4",
-                    "path": "<Touchscreen>/primaryTouch/delta",
-                    "interactions": "Press",
-                    "processors": "",
-                    "groups": "D-pad",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         }

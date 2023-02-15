@@ -16,6 +16,7 @@ public class CharController : MonoBehaviour
     private bool isRunPressed;
     public float rotationPerFrame = 15f;
     private float runMultiply = 3f;
+    
     private void Awake()
     {
         playerMove = new Movement();
@@ -29,6 +30,8 @@ public class CharController : MonoBehaviour
         //playerMove.CharacterControls.Run.started += onRun;
         //playerMove.CharacterControls.Run.canceled += onRun;
     }
+
+    //Testing for UI buttons
 
     private void Update()
     {
@@ -44,7 +47,6 @@ public class CharController : MonoBehaviour
             characterController.Move(currentMovement * (Time.deltaTime * 2f));
         }
     }
-
     private void OnEnable()
     {
         playerMove.CharacterControls.Enable();
