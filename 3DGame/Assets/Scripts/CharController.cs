@@ -116,4 +116,9 @@ public class CharController : MonoBehaviour
     {
         isRunPressed = context.ReadValueAsButton();
     }
+
+    public void ResetPosition()
+    {
+        
+    }
 }

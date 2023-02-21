@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 20590b707c91aff49b45ea53dae7a27b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 3c31233d2aa054d4392f316677ede5e9, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/stylized_dirty_rock.sbsar

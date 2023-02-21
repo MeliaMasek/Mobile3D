@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c35d1390884c6d41ac90e62023b5931, type: 3}
   m_Name: HealthFloat
   m_EditorClassIdentifier: 
-  value: 1
+  value: 0.6499999
   onMinEvent:
     m_PersistentCalls:
       m_Calls:
