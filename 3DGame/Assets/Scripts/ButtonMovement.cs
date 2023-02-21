@@ -22,7 +22,6 @@ public class ButtonMovement : MonoBehaviour
 
     private void Update()
     {
-        RotatationHandling();
         DpadMovement();
     }
 
@@ -34,6 +33,7 @@ public class ButtonMovement : MonoBehaviour
     public void PointerDownLeft()
     {
         moveLeft = true;
+        RotatationHandling();
     }
     public void PointerUpLeft()
     {
@@ -108,8 +108,12 @@ public class ButtonMovement : MonoBehaviour
 
         if (isMovementPressed)
         {
-            Quaternion targetRotation = Quaternion.LookRotation(positionToLookAt);
-            transform.rotation = Quaternion.Slerp(currentRotation, targetRotation, rotationPerFrame * Time.deltaTime);
+            if (currentMovement != Vector3.zero) 
+            {
+                Quaternion targetRotation = Quaternion.LookRotation(positionToLookAt);
+                transform.rotation = Quaternion.Slerp(currentRotation, targetRotation, rotationPerFrame * Time.deltaTime);
+            }
         }
+        Debug.Log("rotation");
     }
 }
