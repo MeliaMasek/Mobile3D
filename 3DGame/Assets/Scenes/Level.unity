@@ -1238,12 +1238,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434849140}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 536f23e12c62295428ddf6c6c5d6ecb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: []
+  enemy:
+  - {fileID: 1365102309}
   spawnTime: 0.5
 --- !u!4 &434849142
 Transform:
@@ -5087,7 +5088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 300
-  rotationPerFrame: 15
+  rotationPerFrame: 10
 --- !u!1 &1486297144
 GameObject:
   m_ObjectHideFlags: 0

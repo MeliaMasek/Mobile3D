@@ -597,9 +597,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.3705898, y: 0.566054, z: 0.29535025}
+    m_Target: {x: 687.8277, y: 1152.7394, z: -338.37817}
     speed: 2
-    m_Value: {x: 0.3705898, y: 0.566054, z: 0.29535025}
+    m_Value: {x: 687.8277, y: 1152.7394, z: -338.37817}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -645,13 +645,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.21809621, y: -0.10284135, z: 0.02314462, w: -0.9702651}
+    m_Target: {x: -0.18846731, y: 0.012669343, z: -0.0024041093, w: -0.98204225}
     speed: 2
-    m_Value: {x: -0.21808615, y: -0.1028366, z: 0.023143552, w: -0.9702203}
+    m_Value: {x: -0.18845853, y: 0.012668752, z: -0.0024039974, w: -0.9819965}
   m_Size:
-    m_Target: 3.6388588
+    m_Target: 1042.0812
     speed: 2
-    m_Value: 3.6388588
+    m_Value: 1042.0812
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -742,7 +742,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -806,9 +806,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 16630000
-      m_LastClickedID: 25366
-      m_ExpandedIDs: 28fbffffc26200001663000094640000
+      m_SelectedIDs: 52ba0000
+      m_LastClickedID: 47698
+      m_ExpandedIDs: 502effffd02effff566bffffd66bffffc26cffff326dffff9a6dffff28fbffff486200009c620000c26200000663000016630000a0630000946400009eb2000092b4000022b9000086b90000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -873,22 +873,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/3DGame/Inventory
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 50
   m_LastFolders:
-  - Assets/Scripts/3DGame/Inventory
+  - Assets/Scripts
   m_LastFoldersGridSize: 50
   m_LastProjectPath: C:\Users\Melia\Gitrepo\Mobile3D\3DGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3e660000
-    m_LastClickedID: 26174
-    m_ExpandedIDs: 00000000cc650000ce650000d0650000d2650000d4650000d66500003a66000000ca9a3b
+    m_SelectedIDs: 3a660000
+    m_LastClickedID: 26170
+    m_ExpandedIDs: 00000000cc650000ce650000d0650000d2650000d4650000d6650000386600003a66000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -968,7 +968,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 180.79999}
+    m_ScrollPosition: {x: 0, y: 169.4}
     m_GridSize: 50
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 110.39996
@@ -1007,7 +1007,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 65.60004
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
