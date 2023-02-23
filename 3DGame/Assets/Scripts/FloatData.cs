@@ -38,4 +38,9 @@ public class FloatData : ScriptableObject
             onMaxEvent.Invoke();
         }
     }
+
+    public void Debuging()
+    {
+        Debug.Log("GameEND");
+    }
 }
