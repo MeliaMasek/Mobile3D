@@ -5,7 +5,6 @@ using UnityEngine;
 
 public abstract class InventoryDisplay : MonoBehaviour
 {
-    [SerializeField] MouseItemData mouseInventoryItem;
     protected InventorySystem inventorySystem;
     protected Dictionary<SlotUI, InventorySlot> slotDictionary;
 

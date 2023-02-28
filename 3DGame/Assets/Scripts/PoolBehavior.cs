@@ -1,21 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PoolBehavior : MonoBehaviour
 {
+    public UnityEvent startEvent, poolEvent;
     public List<Transform> poolList;
     private WaitForSeconds wfsObj;
     public float seconds = 2f;
     private int i;
-
+    public bool canRun = true;
+    
     IEnumerator Start()
     {
+        startEvent.Invoke();
         wfsObj = new WaitForSeconds(seconds);
         
-        while (true)
+        while (canRun)
         {
             yield return wfsObj;
+            poolEvent.Invoke();
             poolList[i].position = Vector3.zero;
             poolList[i].gameObject.SetActive(true);
             i++;

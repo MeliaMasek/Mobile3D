@@ -15,5 +15,5 @@ MonoBehaviour:
   ID: 0
   displayName: TestName2
   description: TestDisplay2
-  icon: {fileID: 7482667652216324306, guid: cf776a91a4b9ae24b802055669713080, type: 3}
+  icon: {fileID: 21300000, guid: cb34be6490b7c824ba9d8346016c50be, type: 3}
   maxStackSize: 99

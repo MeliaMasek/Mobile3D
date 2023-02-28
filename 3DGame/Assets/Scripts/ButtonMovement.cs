@@ -7,6 +7,7 @@ public class ButtonMovement : MonoBehaviour
     private bool moveDown;
     private bool moveUp;
     private Rigidbody rb;
+    private BoxCollider bc;
     private float moveVert;
     private float moveHort;
     public float speed = 300f;
@@ -33,7 +34,6 @@ public class ButtonMovement : MonoBehaviour
     public void PointerDownLeft()
     {
         moveLeft = true;
-        RotatationHandling();
     }
     public void PointerUpLeft()
     {
