@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject indexMenu;
+
     private int sceneToContinue;
     private int currentSceneIndex;
 
@@ -17,6 +19,13 @@ public class MainMenu : MonoBehaviour
     public void Index()
     {
         mainMenu.SetActive(false);
+        indexMenu.SetActive(true);
+        Time.timeScale = 1f;
+    }
+    
+    public void IndexResume()
+    {
+        indexMenu.SetActive(false);
         Time.timeScale = 1f;
     }
 }
