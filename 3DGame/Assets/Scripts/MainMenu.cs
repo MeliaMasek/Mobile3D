@@ -13,4 +13,10 @@ public class MainMenu : MonoBehaviour
         mainMenu.SetActive(false);
         Time.timeScale = 1f;
     }
+    
+    public void Index()
+    {
+        mainMenu.SetActive(false);
+        Time.timeScale = 1f;
+    }
 }

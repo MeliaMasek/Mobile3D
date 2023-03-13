@@ -34,6 +34,7 @@ public class ButtonMovement : MonoBehaviour
     public void PointerDownLeft()
     {
         moveLeft = true;
+        RotatePlayerLeft();
     }
     public void PointerUpLeft()
     {
@@ -43,6 +44,7 @@ public class ButtonMovement : MonoBehaviour
     public void PointerDownRight()
     {
         moveRight = true;
+        RotatePlayerRight();
     }
     public void PointerUpRight()
     {
@@ -52,6 +54,7 @@ public class ButtonMovement : MonoBehaviour
     public void PointerDownUp()
     {
         moveUp = true;
+        RotatePlayerUp();
     }
     public void PointerUpUp()
     {
@@ -61,6 +64,7 @@ public class ButtonMovement : MonoBehaviour
     public void PointerDownDown()
     {
         moveDown = true;
+        RotatePlayerDown();
     }
     public void PointerUpDown()
     {
@@ -69,7 +73,7 @@ public class ButtonMovement : MonoBehaviour
 
     public void DpadMovement()
     {
-        if (moveLeft)
+        if (moveLeft == true)
         {
             moveHort = -speed;
         }
@@ -115,5 +119,24 @@ public class ButtonMovement : MonoBehaviour
             }
         }
         Debug.Log("rotation");
+    }
+
+    public void RotatePlayerLeft()
+    {
+        transform.Rotate(0, -90f, 0);
+    }
+    public void RotatePlayerRight()
+    {
+        transform.Rotate(0, 90f, 0);
+    }    
+    
+    public void RotatePlayerUp()
+    {
+        transform.Rotate(90f, 0, 0);
+    }    
+    
+    public void RotatePlayerDown()
+    {
+        transform.Rotate(-90f, 0, 0);
     }
 }
