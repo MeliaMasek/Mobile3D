@@ -377,6 +377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 86445537}
   - component: {fileID: 86445538}
+  - component: {fileID: 86445539}
   m_Layer: 0
   m_Name: FloorManager
   m_TagString: Untagged
@@ -418,6 +419,19 @@ MonoBehaviour:
   floorLength: 11
   floorAmount: 6
   safeZone: 10
+--- !u!114 &86445539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86445536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774c9a851ee9f9c449951ceacc0fe2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  v3data: {fileID: 11400000, guid: 81adb3f4e4d894d45beb9af13998d355, type: 2}
 --- !u!1001 &174459557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5131,6 +5145,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 86445539}
+        m_TargetAssemblyTypeName: TransformBehavior, Assembly-CSharp
+        m_MethodName: ResetFloor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1165125762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7797,6 +7823,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 86445539}
+        m_TargetAssemblyTypeName: TransformBehavior, Assembly-CSharp
+        m_MethodName: ResetFloor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1824696277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8274,6 +8312,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1453861520}
         m_TargetAssemblyTypeName: TransformBehavior, Assembly-CSharp
         m_MethodName: ResetToZero
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 86445539}
+        m_TargetAssemblyTypeName: TransformBehavior, Assembly-CSharp
+        m_MethodName: ResetFloor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
