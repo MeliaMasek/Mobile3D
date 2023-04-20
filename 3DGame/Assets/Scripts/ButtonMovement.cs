@@ -34,7 +34,7 @@ public class ButtonMovement : MonoBehaviour
     public void PointerDownLeft()
     {
         moveLeft = true;
-        RotatePlayerLeft();
+       //RotatePlayerLeft();
     }
     public void PointerUpLeft()
     {
@@ -44,7 +44,7 @@ public class ButtonMovement : MonoBehaviour
     public void PointerDownRight()
     {
         moveRight = true;
-        RotatePlayerRight();
+        //RotatePlayerRight();
     }
     public void PointerUpRight()
     {
@@ -54,7 +54,7 @@ public class ButtonMovement : MonoBehaviour
     public void PointerDownUp()
     {
         moveUp = true;
-        RotatePlayerUp();
+        //RotatePlayerUp();
     }
     public void PointerUpUp()
     {
@@ -64,7 +64,7 @@ public class ButtonMovement : MonoBehaviour
     public void PointerDownDown()
     {
         moveDown = true;
-        RotatePlayerDown();
+        //RotatePlayerDown();
     }
     public void PointerUpDown()
     {

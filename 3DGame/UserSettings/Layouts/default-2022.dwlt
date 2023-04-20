@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -696,9 +696,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.49406624, y: 1.3018298, z: -3.576941}
+    m_Target: {x: 300, y: 513, z: 0}
     speed: 2
-    m_Value: {x: -0.49406624, y: 1.3018298, z: -3.576941}
+    m_Value: {x: 300, y: 513, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -744,13 +744,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.44859862, y: -0.039439045, z: 0.019744037, w: -0.8928107}
+    m_Target: {x: -0.18112251, y: -0.009467183, z: 0.0016759193, w: -0.9835648}
     speed: 2
-    m_Value: {x: -0.4485986, y: -0.03943904, z: 0.019744035, w: -0.89281064}
+    m_Value: {x: -0.18109557, y: -0.0094657745, z: 0.00167567, w: -0.98341846}
   m_Size:
-    m_Target: 10.565338
+    m_Target: 428.48416
     speed: 2
-    m_Value: 10.565338
+    m_Value: 428.48416
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -808,7 +808,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 28fbffff
+      m_ExpandedIDs: 28fbfffff86200006263000066640000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -873,22 +873,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tools
+    - Assets/ScriptableObjects/GameActions
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 50
   m_LastFolders:
-  - Assets/Tools
+  - Assets/ScriptableObjects/GameActions
   m_LastFoldersGridSize: 50
   m_LastProjectPath: C:\Users\Melia\Gitrepo\Mobile3D\3DGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c0680000
-    m_LastClickedID: 26816
-    m_ExpandedIDs: 000000000468000006680000086800000a6800000c6800000e6800001068000012680000146800001668000000ca9a3b
+    m_SelectedIDs: ac680000
+    m_LastClickedID: 26796
+    m_ExpandedIDs: 000000000468000006680000086800000a6800000c6800001068000012680000146800001668000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -943,7 +943,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: d6f7000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1007,7 +1007,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 397.59998
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
